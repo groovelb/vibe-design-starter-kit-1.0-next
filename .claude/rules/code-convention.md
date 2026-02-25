@@ -4,10 +4,7 @@ JavaScript + React.js 코드 작성 규칙
 
 ## 0. Next.js Directive Rules
 
-- MUI(`@mui/material`)를 import하는 컴포넌트 파일에는 반드시 첫 줄에 `'use client';` 추가
-- `.stories.jsx` 파일에는 `'use client'` 불필요 (Storybook은 항상 클라이언트 환경)
-- `app/` 하위 `page.jsx`에는 `'use client'` 사용 금지
-- `'use client'`는 파일의 **맨 첫 줄**에 위치 (import 문보다 위)
+→ `nextjs.md` 참조 (`'use client'` 배치 규칙)
 
 ## 1. Lint Rules (자동 검출/수정 기준)
 
