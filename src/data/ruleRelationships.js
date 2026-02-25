@@ -100,6 +100,13 @@ export const ruleNodes = [
     path: '.claude/skills/component-work/SKILL.md',
     description: '컴포넌트 생성/수정/삭제/스토리 워크플로우 (의도 기반 활성화)',
   },
+  {
+    id: 'rule-visualization',
+    name: 'rule-visualization (Skill)',
+    priority: 'Skill',
+    path: '.claude/skills/rule-visualization/SKILL.md',
+    description: '룰/스킬 변경 시 ruleRelationships.js 동기화 + Storybook 시각화 관리',
+  },
   // Skill Resources
   {
     id: 'storybook-writing',
@@ -151,6 +158,7 @@ export const ruleEdges = [
 
   // CLAUDE.md → Skill (의도 기반 활성화)
   { from: 'claude-md', to: 'component-work', type: 'activates', note: '컴포넌트 작업 시' },
+  { from: 'claude-md', to: 'rule-visualization', type: 'activates', note: '룰/스킬 변경 시' },
 
   // Skill → Resources (on-demand Read)
   { from: 'component-work', to: 'taxonomy-index', type: 'resources', note: '생성 시 카테고리 후보 파악' },
@@ -223,6 +231,7 @@ export const conditionMatrix = [
   {
     task: '룰 수정/추가',
     rules: ['claude-md'],
+    skill: 'rule-visualization',
     note: 'ruleRelationships.js 동기화 필수',
   },
   {

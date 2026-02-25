@@ -61,12 +61,8 @@ pnpm lint             # ESLint 검사
 3. 기존 스토리 통과 확인
 
 ### 룰 수정/추가/삭제
-1. 룰 파일 수정/추가/삭제
-2. `src/data/ruleRelationships.js` 동기화:
-   - 룰 추가/삭제 → `ruleNodes` 배열에 노드 추가/제거
-   - 참조 관계 변경 → `ruleEdges` 배열에 엣지 추가/수정/제거
-   - 작업 조건 변경 → `conditionMatrix` 배열 업데이트
-3. `pnpm build-storybook`으로 `Overview/Rule Relationships` 시각화 정상 렌더링 확인
+→ `rule-visualization` Skill이 워크플로우를 담당.
+   룰/스킬 변경 → ruleRelationships.js 동기화 → Storybook 시각화 검증.
 
 ## 병렬 작업 규칙
 
