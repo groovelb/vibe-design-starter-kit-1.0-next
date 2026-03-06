@@ -33,7 +33,7 @@
 3. **기존 컴포넌트 확인**: `resources/components.md` Read
    - 기존 것으로 커버 가능하면 재활용, 아니면 신규 생성
 4. **구현**:
-   - `project-directory.md`에 따라 위치 결정
+   - `directory-structure.md` rule에 따라 위치 결정
    - `resources/storybook-writing.md` Read → 스토리 작성
    - 인터랙티브 감지 시 → `resources/interactive-principles.md` Read
    - `resources/components.md` 업데이트 (MUST)

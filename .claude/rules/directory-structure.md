@@ -1,4 +1,4 @@
-# Project Directory Rules (MUST)
+# Directory Structure (MUST)
 
 새로운 컴포넌트를 추가할 때는 아래 디렉토리 룰을 따른다.
 분류 기준: Vibe Dictionary 텍소노미 v0.4 (`.claude/skills/component-work/resources/taxonomy-v0.4.md`)
